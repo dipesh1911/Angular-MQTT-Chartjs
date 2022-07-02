@@ -1,0 +1,100 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    grid-auto-rows: minmax(100px, auto);
+  }
+  .one {
+    grid-column: 1 / 4;
+    grid-row: 1;
+    background-color: black;
+    border: 1px solid #000;
+  }
+  .two {
+    grid-column: 1 / 4;
+    grid-row: 2;
+    border: 1px solid #000;
+ 
+
+  }
+  .three {
+    grid-column: 1/4;
+    border: 1px solid #000;
+    background-color: #000;
+    grid-row: 3;
+  }
+  .four {
+    grid-column: 1/4;
+    border: 1px solid #fff;
+    background-color: #000;
+    grid-row: 4;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  
+  .column {
+    float: left;
+    width: 16%;
+   
+  }
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .cc-selector input{
+    margin:0 57px ;padding:0;
+    -webkit-appearance:none;
+       -moz-appearance:none;
+            appearance:none;
+}
+.unlock{background-image:url(/assets/ICONS/DI0031-unlock_57_50_OR.bmp);}
+.mastercard{background-image:url(/assets/ICONS/DI0032-lock_57_50.bmp);}
+
+.cc-selector input:active +.drinkcard-cc{opacity: .9;}
+.cc-selector input:checked +.drinkcard-cc{
+    -webkit-filter: none;
+       -moz-filter: none;
+            filter: none;
+}
+.drinkcard-cc{
+    cursor:pointer;
+    background-size:contain;
+    background-repeat:no-repeat;
+    display:inline-block;
+    width:100px;height:90px;
+    -webkit-transition: all 100ms ease-in;
+       -moz-transition: all 100ms ease-in;
+            transition: all 100ms ease-in;
+    -webkit-filter: brightness(1.8) grayscale(1) opacity(.7);
+       -moz-filter: brightness(1.8) grayscale(1) opacity(.7);
+            filter: brightness(1.8) grayscale(1) opacity(.7);
+}
+.drinkcard-cc:hover{
+    -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
+       -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
+            filter: brightness(1.2) grayscale(.5) opacity(.9);
+}
+.text-value
+{
+  margin: 7px 0 0 0;
+    height: 50px;
+    font-size: 25px;
+    width: 66%;
+    letter-spacing: 15px;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+    color: white;
+    background-color: dodgerblue;
+
+   
+}
+.text-value::placeholder{
+  color: #fff;
+}
+
